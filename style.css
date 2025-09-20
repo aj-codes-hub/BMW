@@ -1,0 +1,194 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+.coloors{
+  color: rgba(255, 255, 255, 0.415);
+}
+body{
+    color: white;
+    background-color: black;
+}
+
+.main_d1{
+    position: fixed;
+     height: 100vh;
+     width: 100vw;
+     overflow: hidden;  
+}
+.inner_d{
+   display: flex;
+}
+.cell{
+   height: 5vh;
+   width: 5vh;
+    border:1px solid rgba(141, 111, 111, 0.086);
+}
+.cell:hover{  
+   background-color: rgba(0, 85, 255, 0.237);
+   box-shadow: 1px 1px 200px 40px rgb(0, 85, 255);
+}
+
+.animate-fadeInUp {
+      animation: fadeInUp 2s ease-out forwards;
+    }
+
+ @keyframes fadeInUp {
+      0% {
+        width: 1vh;
+        opacity: 0;
+      }
+      100% {
+        width: 90vw;
+        opacity: 1;
+      }
+    }
+
+    .animation-smoothCome{
+     animation: smoothCome 2s ease-out forwards; 
+    }
+
+     @keyframes smoothCome {
+      0% {
+        opacity: 0;
+      }
+      80% {
+       
+        opacity: 0;
+      }
+      100% {
+       
+        opacity: 1;
+      }
+    }
+    .blink{
+      animation: blink 1s ease-in-out;
+      animation-delay: 5s;
+    }
+    .b1{
+       animation-delay: 4.2s;
+    }
+    .b2{
+       animation-delay: 3.9s;
+    }
+    .b3{
+       animation-delay: 3.6s;
+    }
+    .b4{
+       animation-delay: 3.3s;
+    }
+    .b5{
+       animation-delay: 3s;
+    }
+     @keyframes blink {
+      0% {
+       font-size: 1rem;
+       color: white;
+      }
+      50% {
+         font-size: 1.1rem;
+         font-weight: 700;
+       color: rgb(55, 101, 142);
+      }
+      100% {
+         font-size: 1rem;
+       color: white;
+      }
+    }
+
+    .animation-overCome{
+    animation: overCome 2s ease-in-out;
+    }
+   @keyframes overCome{
+    0%{
+      height: 5%;
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+     height: 20%;
+    }
+   }
+
+.animation-overCome-2{
+    animation: overCome 2s ease-in-out;
+    }
+   @keyframes overCome{
+    0%{
+      height: 5%;
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+     height: 20%;
+    }
+   }
+
+    .hero-img{
+      background-image: url(bg_hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-headind{
+      -webkit-background-clip: text;
+    }
+
+    .animation-popUp{
+      animation:popUp 2s ease-in-out;
+    }
+    @keyframes popUp{
+      0%{
+         transform: scale(0.0);
+      }
+      50%{
+         transform: scale(0.0);
+      }
+      60%{
+         transform: scale(0.0);
+      }
+      90%{
+        transform: scale(1.0);
+      }
+      100%{
+          transform: scale(1.0);
+      }
+    }
+    @keyframes grow {
+   to {
+    width: 80%; /* final progress percentage */
+   }
+   }
+
+    @keyframes grow2 {
+   to {
+    width: 90%; /* final progress percentage */
+   }
+   }
+
+    @keyframes grow3 {
+   to {
+    width: 77%; /* final progress percentage */
+   }
+   }
+
+   .blinking{
+
+    animation:blinker 3s ease-in-out infinite;
+   }
+   @keyframes blinker{
+    0%{
+      font-size: 1rem;
+    }
+    50%{
+         font-size: 1.8rem;
+          font-weight: 900;
+    }
+    100%{
+        font-size: 1rem;
+    }
+   }
